@@ -1,0 +1,208 @@
+* {
+  margin: auto;
+  padding: auto;
+}
+
+.titlebar {
+  text-align: center;
+  background-color: blue;
+  height: auto;
+  padding-bottom: 0.5em;
+}
+
+.todo-list{
+  padding-top: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+li {
+    list-style-type: none;
+}
+.todo-item {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: auto;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  
+ 
+  
+}
+
+.todobottom {
+  margin-top: 0.2em;
+  padding-right: 0.5em;
+  margin-bottom: 0.2em;
+  text-align: right;
+}
+
+.trsh-btn {
+  width: 3.5em;
+  height: 2.5em;
+  border: none;
+  cursor: pointer;
+  padding:0.5em;
+}
+.conf-btn {
+  padding:0.5em;
+  width: 3.5em;
+  height: 2.5em;
+  border: none;
+  cursor: pointer;
+}
+.compleated{
+	text-decoration:line-through;
+	opacity:0.5;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+
+.plusButton {
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 2em;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  width: 5em;
+  height: 5em;
+}
+.buttext{
+  display: none;
+}
+.plusButton:hover {
+  background-color: green;
+}
+.plusButton:active {
+  background-color: blue;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 20%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formtext {
+  width: 90%;
+  height: 2em;
+  font-size: 2em;
+}
+.todo-button {
+  position: absolute;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  right: 0;
+  bottom: 0.2em;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.fa-trash-alt{
+	pointer-events:none;
+}
+
+@media screen and (min-width: 800px) {
+  .todo-list {	  
+    display: flex;
+    max-width: 1200px;
+    margin-top:1em;
+	flex-wrap: wrap;
+  }
+  .todo-item {
+    width: 45%;
+	margin-left: 1em;
+  }
+
+  .plusButton {
+    margin-top: 1em;
+	width: 20em;
+    border-radius:1%;
+    position: static;
+    
+
+    
+  }
+  .buttext{
+  display: inline;
+    
+
+
+}
+}
